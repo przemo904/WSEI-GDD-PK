@@ -6,11 +6,11 @@ public class BoxController : MonoBehaviour {
 
     [SerializeField] Transform rotationCenter; //Take position from Center(Empty Game Object).
     [SerializeField] float rotationRadius = 6f; //Set distance from rotationCenter. 
-    [SerializeField] float[] speed = new float[2] {0.1f,0.3f }; //Set speed of the Box. First is normal speed. Second is faster speed(Hold space).
+    [SerializeField] float[] speed = new float[2] {1f,3f }; //Set speed of the Box. First is normal speed. Second is faster speed(Hold space).
 
 
     private float posX, posY; //Position of the next Box co-ordinates in space.
-    private float angle = 0f; //An angle which will help to find posX and posY. Quarters in a circle (0-360).
+    private float angle = 0f; //An angle which will help to find posX and posY.
 
     private bool left = false, right = false; // If Player press the key change values on true.
     private int space = 0; //If 0 - normal speed. If 1 - faster speed.   
@@ -66,7 +66,7 @@ public class BoxController : MonoBehaviour {
     {
         posX = rotationCenter.position.x + Mathf.Cos(angle-1.57f) * rotationRadius;
         posY = rotationCenter.position.y + Mathf.Sin(angle-1.57f) * rotationRadius;
-        Debug.Log(angle);
+        
         transform.position = new Vector2(posX, posY);
 
 
@@ -79,8 +79,7 @@ public class BoxController : MonoBehaviour {
             angle = angle - Time.deltaTime * speed[space];
         }
 
-        if (angle >= 360f) { angle = 0f; }
-
+       
     }
 
 }
