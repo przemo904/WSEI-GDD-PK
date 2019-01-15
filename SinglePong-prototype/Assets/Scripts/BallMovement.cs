@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
 
-    [SerializeField] float speed = 20f;
-
+    [SerializeField] float speed = 30f;
+    
   
+    
     Vector2 direction;
     private Rigidbody2D rb2d;
     float distance;
@@ -21,15 +22,29 @@ public class BallMovement : MonoBehaviour {
     {
         distance = Vector2.Distance(transform.position, new Vector2(0, 0));
 
-        if (distance > 6.5f) {
-            Debug.Log("You Died");
+        if (distance > 7.5f) {
+            //Debug.Log("You Died");
+            Destroy(gameObject);
+            BallGenerator.BallNumbers--;
+            LevelManager.LivesNumber--;
         }
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        //transform.Rotate(new Vector3(0, 0, ));
+
+        if (collision.gameObject.tag.Equals("Ball")) {
+           
+            Destroy(gameObject);
+            BallGenerator.BallNumbers--;
+        }
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+
+            
+
+        }
         
     }
 
