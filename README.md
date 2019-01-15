@@ -1,6 +1,6 @@
 # WSEI-GDD-PK\
 
-1. Nazwa gry: 20 Bouncing Balls.
+1. Nazwa gry: 10 Bouncing Balls.
 
 2. Wysokopoziomowy opis projektu: 
 
@@ -8,7 +8,7 @@
         
         - Jest to gra zręcznościowa z gatunku arcade.
         
-        - Zadaniem gracza jest utrzymanie w środku okręgu 20 piłeczek. Każda kulka pojawia się w środku i zaczyna podążać w losowym               kierunku. Gracz używając platformy powinien odbijać piłki w ten sposób by utrzymywać je w środku. Jeśli piłki się ze sobą               zderzą, lub wyjdą poza okręg po którym porusza się nasza platforma, to kulki ulegają dezintegracji. W przypadku gdy piłka               wyjdzie poza okręg gracz traci 1 życie, których ma w sumie 5. W środku okręgu czasami pojawiają się kwadraty, które po                   najechaniu przez piłkę na nie znikają, a gracz zdobywa kolejną platforme do odbijania kulek.
+        - Zadaniem gracza jest utrzymanie w środku okręgu 10 piłeczek. Każda kulka pojawia się w środku i zaczyna podążać w losowym               kierunku. Gracz używając platformy powinien odbijać piłki w ten sposób by utrzymywać je w środku. Jeśli piłki się ze sobą               zderzą, lub wyjdą poza okręg po którym porusza się nasza platforma, to kulki ulegają dezintegracji. W przypadku gdy piłka               wyjdzie poza okręg gracz traci 1 życie, których ma w sumie 5. W środku okręgu czasami pojawiają się kwadraty, które po                   najechaniu przez piłkę na nie znikają, a gracz zdobywa kolejną platforme do odbijania kulek.
 
 3. Pomysł wywodzi się ze starej gry - pong.
 
@@ -24,7 +24,7 @@
         
         - Gracz ma 5 żyć i za każdym razem jak piłka wychodzi poza okrąg, traci jedno życie. Jeśli ich liczba będzie wynosić zero to               przegrywa.
         
-        - Jeśli uda się utrzymać w okręgu 20 piłeczek jednocześnie, to gra zakończy się zwyciestwem.
+        - Jeśli uda się utrzymać w okręgu 10 piłeczek jednocześnie, to gra zakończy się zwyciestwem.
         
         - Platforma automatycznie obraca się w stronę środka okręgu.
 
