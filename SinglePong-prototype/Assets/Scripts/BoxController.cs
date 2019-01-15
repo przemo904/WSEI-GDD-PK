@@ -21,7 +21,7 @@ public class BoxController : MonoBehaviour {
     {
         rotationCenter = GameObject.FindGameObjectWithTag("Center").transform;
 
-        BoxAngle = (1.57f * BoxGenerator.BoxNumber)/ (BoxGenerator.BoxNumber+1);
+        BoxAngle = 1.57f + BoxGenerator.BoxNumber* Random.Range(1,100);
         
     }
 

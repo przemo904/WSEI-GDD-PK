@@ -17,7 +17,7 @@ public class BallGenerator : MonoBehaviour {
 
     IEnumerator CreateBall() {
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(6);
 
 
         if (inside == false || BallNumbers == 0)

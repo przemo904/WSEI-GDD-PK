@@ -5,11 +5,12 @@ using UnityEngine;
 public class Bonus : MonoBehaviour {
 
     public static bool square = false;
-
+    public static GameObject prevSquare;
     private float posX, posY;
 
     private void Awake()
     {
+        prevSquare = this.gameObject;
         posX = Random.Range(1, 4.5f)* PlusOrMinus();
         posY = Random.Range(1, 4.5f)* PlusOrMinus();
 
@@ -18,7 +19,7 @@ public class Bonus : MonoBehaviour {
     private float PlusOrMinus()
     {
         float los = (float) Random.Range(-2f, 2f);
-        Debug.Log(los);
+        //Debug.Log(los);
         if ( los > 0)
         {
             return 1;
@@ -35,7 +36,7 @@ public class Bonus : MonoBehaviour {
         if (collision.gameObject.tag.Equals("Ball")) {
 
             
-            Debug.Log("zderzenie z pilka");
+            //Debug.Log("zderzenie z pilka");
             square = true;
             Destroy(gameObject);
             

@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour {
 
     public Text LivesText;
     public Text BallNumberText;
-
+    public Text EndText;
     
     public static int LivesNumber = 5;
 
@@ -16,15 +16,18 @@ public class LevelManager : MonoBehaviour {
         BallNumberText.text = "Ilość kul w środku: " + BallGenerator.BallNumbers;
         LivesText.text = "Ilość żyć: " + LivesNumber;
 
+
+
         if(BallGenerator.BallNumbers >= 10)
         {
-            Debug.Log("You Win");
 
+            EndText.text = "You Win!";
+            Time.timeScale = 0;
         } 
 
         if(LivesNumber <= 0)
         {
-            Debug.Log("You Lose");
+            EndText.text = "You Died";
             Time.timeScale = 0;
 
         }
