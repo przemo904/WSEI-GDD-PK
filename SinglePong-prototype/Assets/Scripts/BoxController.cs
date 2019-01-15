@@ -7,7 +7,7 @@ public class BoxController : MonoBehaviour {
     Transform rotationCenter; //Take position from Center.
 
     [SerializeField] float rotationRadius = 6f; //Set distance from rotationCenter. 
-    [SerializeField] float[] speed = new float[2] {2f,6f }; //Set speed of the Box. First is normal speed. Second is faster speed(Hold space).
+    [SerializeField] float[] speed = new float[2] {1.5f,3f }; //Set speed of the Box. First is normal speed. Second is faster speed(Hold space).
 
 
     private float posX, posY; //Position of the next Box co-ordinates in space.
@@ -85,11 +85,11 @@ public class BoxController : MonoBehaviour {
         var angleBox = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg ;
         
 
-        if (down == true && HelpAngleRot < 45)
+        if (down == true && HelpAngleRot < 30)
         {
             HelpAngleRot = HelpAngleRot + Time.deltaTime * 200f;
         }
-        if (up == true && HelpAngleRot > -45)
+        if (up == true && HelpAngleRot > -30)
         {
             HelpAngleRot = HelpAngleRot - Time.deltaTime * 200f;
         }

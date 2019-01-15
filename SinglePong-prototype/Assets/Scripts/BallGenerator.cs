@@ -19,14 +19,18 @@ public class BallGenerator : MonoBehaviour {
 
         yield return new WaitForSeconds(6);
 
-
+        var helpBallNum = BallNumbers;
         if (inside == false || BallNumbers == 0)
         {
             Instantiate(ball);
             BallNumbers++;
 
         }
-        
+
+        if (helpBallNum == BallNumbers) {
+            inside = false;
+        }
+
         StartCoroutine(CreateBall());
     }
  
