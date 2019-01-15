@@ -18,7 +18,7 @@
         
         - Platforma, która się porusza po okręgu z normalną prędkością za pomocą strzałek na klawiaturze(lewo i prawo), lub szybszą po naciśnięciu spacji.
         
-        - Kulki, które generowane są co 4 sekundy, chyba że w środku znajduje się inna kulka(Wtedy generowana kulka musi zaczekać 1 sekundę na swoją kolej). Każda nowo stworzona kulka porusza się w losowym kierunku.
+        - Kulki, które generowane są co 6 sekund, chyba że w środku znajduje się inna kulka(Wtedy generowana kulka musi zaczekać 1 sekundę na swoją kolej). Każda nowo stworzona kulka porusza się w losowym kierunku.
         
         - Kwadraty generowane są w 10 sekundowym odstępie czasu. Żaden kwadrat nie może pojawić się w środku okręgu lub poza nim. Jeśli pojawi się nowy kwadrat to stary znika.
         
