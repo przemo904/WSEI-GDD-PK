@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour {
 
     private void Update()
     {
-        BallNumberText.text = "Ilość kul w środku: " + BallGenerator.BallNumbers;
+        BallNumberText.text = "Ilość kul w środku: " + BallGenerator.BallNumbers + "/10";
         LivesText.text = "Ilość żyć: " + LivesNumber;
 
 
